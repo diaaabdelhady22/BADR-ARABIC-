@@ -1,18 +1,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
     <link rel="website icon" href="logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <style>
+  body {
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+  }
+
   .main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 120px; /* علشان ميبقاش لازق في العنوان */
+    margin-top: 120px; 
 }
 
 .not {
@@ -20,21 +25,45 @@
     border-radius: 20px;
     height: 330px;
     width: 360px;
-    overflow: hidden; /* علشان الحواف تمسك الجزئين */
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
 }
 
 .not .top {
     background-color: rgb(0, 53, 0);
-    height: 25%; /* ربع الكارت */
+    height: 25%; 
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .not .bottom {
     background-color: gold;
-    flex: 1; /* ياخد باقي الكارت */
+    flex: 1; 
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not .bottom a {
+    background-color: green;
+    color: gold;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.not .bottom a:hover {
+    background-color: darkgreen;
 }
 
 /* تابلت */
@@ -57,18 +86,23 @@
     height: 220px;
   }
 }
-
-
   </style>
-     <div class="box1" align="center">
-            بــدر اللـــغة العربيــــة
-          </div><br><br>
-          <img src="logo.png" width="200px"><br>
+
+  <div class="box1" align="center">
+    بــدر اللـــغة العربيــــة
+  </div><br><br>
+  <img src="logo.png" width="200px"><br>
+
 <div class="main">
+  <!-- الكارت الأول -->
   <div class="not">
-    <div class="top"></div>
-    <div class="bottom"></div>
+    <div class="top">امتحان المنادى</div>
+    <div class="bottom">
+      <a href="https://quizzory.in/id/68be4289ebe2f39784666c1a" target="_blank">ادخل الامتحان</a>
+    </div>
   </div>
+
+  <!-- باقي الكروت زي ما هي -->
   <div class="not">
     <div class="top"></div>
     <div class="bottom"></div>
@@ -78,7 +112,5 @@
     <div class="bottom"></div>
   </div>
 </div>
-
-
 </body>
 </html>
