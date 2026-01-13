@@ -1,1 +1,116 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link rel="website icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <style>
+  body {
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+  }
 
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 120px; 
+}
+
+.not {
+    border: 5px solid rgb(0, 53, 0);
+    border-radius: 20px;
+    height: 330px;
+    width: 360px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.not .top {
+    background-color: rgb(0, 53, 0);
+    height: 25%; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.not .bottom {
+    background-color: gold;
+    flex: 1; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not .bottom a {
+    background-color: green;
+    color: gold;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.not .bottom a:hover {
+    background-color: darkgreen;
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .not {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+  .main {
+    gap: 15px;
+  }
+
+  .not {
+    width: 100%;
+    max-width: 90%;
+    height: 220px;
+  }
+}
+  </style>
+
+  <div class="box1" align="center">
+    بــدر اللـــغة العربيــــة
+  </div><br><br>
+  <img src="logo.png" width="200px"><br>
+
+<div class="main">
+  <!-- الكارت الأول -->
+  <div class="not">
+    <div class="top">مراجعة نحو العباقرة</div>
+    <div class="bottom">
+      <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:645c2fdc-0945-40ce-8513-3e6f22e7220d" target="_blank">ادخل الامتحان</a>
+    </div>
+  </div>
+
+  <!-- باقي الكروت زي ما هي -->
+  <div class="not">
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="not">
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+</div>
+</body>
+</html>
